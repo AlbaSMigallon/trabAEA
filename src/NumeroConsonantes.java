@@ -16,7 +16,7 @@ public class NumeroConsonantes {
 			}
 		}
 
-		return numersoConsonantes;
+		return numeroConsonantes;
 	}
 
 }
