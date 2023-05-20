@@ -1,32 +1,22 @@
 import java.util.*;
+
 public class NumeroConsonantes {
-	private String frase;
-	
-	 public int numeroConsonantes() {
-	        String consonantes = "bcdfghjklmnpqrstvwxyz";
-	        int numeroConsonantes = 0;
+	// private String frase;
 
-	        
-	        for (int i = 0; i < frase.length(); i++) {
-	            char c = frase.charAt(i);
-	            if (consonantes.indexOf(c) != -1) {
-	                numeroConsonantes++;
-	            }
-	        }
+	public static int numeroConsonantes(String frase) {
+		String consonantes = "bcdfghjklmnpqrstvwxyz";
+		int numeroConsonantes = 0;
 
-	        return numeroConsonantes;
-	    }
+		for (int i = 0; i < frase.length(); i++) {
+			frase.toLowerCase();
+			char c = frase.charAt(i);
 
-	    
+			if (consonantes.indexOf(c) != -1) {
+				numeroConsonantes++;
+			}
+		}
+
+		return numersoConsonantes;
 	}
-	
 
-	
-
-
-
-
-
-
-
-
+}

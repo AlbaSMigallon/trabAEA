@@ -1,16 +1,18 @@
 import java.util.Scanner;
 
 public class PrincipalApp {
+	static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		//numero consonantes
-		 Scanner scanner = new Scanner(System.in);
-	        System.out.print("Ingresa una frase: ");
-	        String frase = scanner.nextLine();
 
-	        NumeroConsonantes contador = new NumeroConsonantes();
-	        int numeroConsonantes = contador.numeroConsonantes();
-	        System.out.println("Número de consonantes: " + numeroConsonantes);
+		System.out.print("Ingresa una frase: ");
+		String frase = sc.nextLine();
+		// numero consonantes
+		int num = NumeroConsonantes.numeroConsonantes(frase);
+		System.out.println(num);
+		// sin vocales
+		String soloConsonantes = SinVocales.sinVocales(frase);
+		System.out.println(soloConsonantes);
 
 	}
 
