@@ -17,15 +17,7 @@ public class NumeroConsonantes {
 	        return numeroConsonantes;
 	    }
 
-	    public static void main(String[] args) {
-	        Scanner scanner = new Scanner(System.in);
-	        System.out.print("Ingresa una frase: ");
-	        String frase = scanner.nextLine();
-
-	        NumeroConsonantes contador = new NumeroConsonantes();
-	        int numeroConsonantes = contador.numeroConsonantes();
-	        System.out.println("Número de consonantes: " + numeroConsonantes);
-	    }
+	    
 	}
 	
 
